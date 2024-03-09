@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "geonames"
+version = "0.1.0"
+description = ""
+authors = ["Felipe Carlos <efelipecarlos@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "geonames"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+dynaconf = "^3.2.4"
+opensearch-py = "^2.4.2"
+pycountry = "^23.12.11"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.13"
+pytest = "^7.4.4"
+pre-commit = "^3.6.0"
+
+[tool.isort]
+profile = "black"
+line_length = 88
+skip_glob = [ "docs", "notes" ]
+
+[tool.ruff]
+select = [
+  "E",   # pycodestyle
+  "F",   # pyflakes
+  "UP",  # pyupgrade
+  "I",   # isort
+  "N",   # pep8 naming
+  "PL",  # pylint
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
