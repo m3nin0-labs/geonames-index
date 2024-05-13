@@ -2,6 +2,8 @@
 
 The Geonames Index is designed to streamline the process of downloading, transforming, and indexing data from the comprehensive Geonames database into an Opensearch instance. This solution is ideal for anyone looking to leverage geographical data for search applications, data analysis, or geographic information systems.
 
+> **Note**: This is a hobby project.
+
 ## Features
 
 - (1) Automated download of Geonames data;
@@ -49,6 +51,10 @@ To index data, make sure you have the `geonames` library installed. You can inst
 ```sh
 pip install .
 ```
+
+## Rest API
+
+If you want to explore the Geonames data using a Rest API, check the [Geonames Search project](https://github.com/m3nin0-labs/geonames-search).
 
 ## Contributing
 
